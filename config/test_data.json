@@ -1,0 +1,36 @@
+{
+  "products": {
+    "1": {
+      "name": "Blue Top", "price": 500, "category": "Women > Tops",
+      "brand": "Polo", "availability": "In Stock", "condition": "New"
+    },
+    "2": {"name": "Men Tshirt", "price": 400}
+  },
+  "categories": [
+    {"group": "Women", "name": "Dress", "id": 1, "title": "women - dress products"},
+    {"group": "Men", "name": "Jeans", "id": 6, "title": "men - jeans products"}
+  ],
+  "brands": [
+    {"name": "Polo", "title": "brand - polo products"}
+  ],
+  "search_terms": {
+    "valid": ["top", "dress", "tshirt"],
+    "no_match": "zzqxjkvw"
+  },
+  "review": {
+    "name": "QA Reviewer",
+    "email": "qa_reviewer@example.com",
+    "text": "Automated review: product page works as expected."
+  },
+  "contact": {
+    "subject": "Automated test enquiry",
+    "message": "This message was sent by the automated UI test suite."
+  },
+  "payment": {
+    "name_on_card": "QA Tester",
+    "card_number": "4111111111111111",
+    "cvc": "123",
+    "expiry_month": "12",
+    "expiry_year": "2030"
+  }
+}

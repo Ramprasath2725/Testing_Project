@@ -5,9 +5,12 @@ __pycache__/
 .venv/
 venv/
 env/
+.python-version
 
-# Pytest / reports
+# Pytest / reports / artefacts
 .pytest_cache/
+.coverage
+htmlcov/
 reports/
 allure-results/
 allure-report/
@@ -15,11 +18,15 @@ screenshots/
 logs/
 *.log
 
-# IDE
+# Secrets / local overrides (never commit)
+.env
+.env.*
+*.pem
+config/local.ini
+
+# IDE / OS
 .idea/
 .vscode/
 *.swp
-
-# OS
 .DS_Store
 Thumbs.db

@@ -1,10 +1,14 @@
 # Core automation stack
-selenium>=4.20.0
-pytest>=8.0.0
+selenium>=4.20,<5
+pytest>=8.0,<10
+requests>=2.31,<3          # API-based test-data setup/teardown
 
 # Reporting
-pytest-html>=4.1.1
-allure-pytest>=2.13.5
+pytest-html>=4.1.1,<5
 
-# Parallel execution
-pytest-xdist>=3.5.0
+# Execution helpers
+pytest-xdist>=3.5,<4            # parallel runs: pytest -n 4
+pytest-rerunfailures>=14,<17    # optional flaky-network retries (used in CI)
+
+# Optional: Allure reporting (screenshots are attached automatically if installed)
+# allure-pytest>=2.13.5
