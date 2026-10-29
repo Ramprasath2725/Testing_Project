@@ -7,7 +7,7 @@ from utils.config_reader import ConfigReader
 
 class LoginPage(BasePage):
     # --- Login form ---
-    LOGIN_EMAIL = (By.CSS_SELECTOR, "input[data-qa='login-email']")
+    LOGIN_EMAIL = (By.CSS_SELECTOR, "[data-qa='login-email']")
     LOGIN_PASSWORD = (By.CSS_SELECTOR, "input[data-qa='login-password']")
     LOGIN_BUTTON = (By.CSS_SELECTOR, "button[data-qa='login-button']")
     LOGIN_ERROR = (
