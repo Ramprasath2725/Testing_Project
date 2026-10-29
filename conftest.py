@@ -151,4 +151,5 @@ def pytest_terminal_summary(terminalreporter):
         return
     terminalreporter.section("Locator recovery events (update these page-object locators)")
     for nodeid, e in rows:
-        terminalreporter.write_line(f"{nodeid}\n    {e['original']}\n -> {e['healed']}  [{e['strategy']}]")
+        terminalreporter.write_line(nodeid)
+        terminalreporter.write_line(f"    {e['original']}  ->  {e['healed']}  [{e['strategy']}]")
